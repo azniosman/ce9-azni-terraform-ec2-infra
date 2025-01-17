@@ -7,7 +7,7 @@ resource "aws_instance" "public" {
   vpc_security_group_ids = [aws_security_group.allow_ssh.id] 
   
   tags = { 
-    Name = "azni-ec9" #Prefix your own name, e.g. jazeel-ec2 
+    Name = "azni-ec9-terraform" #Prefix your own name, e.g. jazeel-ec2 
     } 
 } 
   resource "aws_security_group" "allow_ssh" { 
